@@ -37,15 +37,16 @@ defmodule Todo.MixProject do
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.1"},
-      {:postgrex, ">= 0.0.0"},
+      {:postgrex, ">= 0.0.0", override: true},
+      {:db_connection, ">= 0.0.0", override: true},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-	  # TODO: Enable and configure these
-	  # Custom
-	  # {:absinthe_plug, ">= 0.0.0"},
+    # TODO: Enable and configure these
+    # Custom
+    # {:absinthe_plug, ">= 0.0.0"},
       # {:opencensus_cowboy, ">= 0.0.0"},
       # {:opencensus_jaeger, ">= 0.0.0"},
       # {:opencensus_plug, ">= 0.0.0"},
